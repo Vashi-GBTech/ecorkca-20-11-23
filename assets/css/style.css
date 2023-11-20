@@ -1,0 +1,1092 @@
+/* open sans font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+/* * css  */
+:root {
+    --secondry_font_size: 16px;
+    --primary_Font_size: 1.9rem;
+    --content_heading: 2rem;
+    --list_margin_bottom: .5rem;
+    --heading_font_weight: 550;
+    --box-shadow: 0px 2px 6px 1px lightgrey;
+    --box_normal_text: 500;
+}
+/* *{
+    border: 1px solid red;
+} */
+
+.normalText {
+    font-size: var(--secondry_font_size);
+    font-weight: var(--box_normal_text);
+    font-family:cursive;
+    color: #cd1432;
+   
+    font-style: italic
+}
+
+.primaryHeading {
+    font-size: 21px;
+    font-weight: var(--heading_font_weight);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    
+}
+
+.mainHeading {
+    font-size: var(--content_heading);
+    font-weight: var(--heading_font_weight);
+}
+
+.box_shadow {
+    box-shadow: var(--box-shadow);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+button:focus, button:active, button:hover{
+    outline: none !important;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: unset !important;
+}
+.pageBanner {
+    height:60vh;
+    width: 100%;
+    background-size: cover;
+}
+
+ /* drop down css  */
+
+ .dropdown-item:hover, .dropdown-item:focus {
+    color: #16181b;
+    outline: none !important;
+    text-decoration: none;
+    background-color: #e7455f4a !important;
+    font-weight: 500;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #16181b !important;
+    text-decoration: none;
+    background-color: #e7455f4a !important;
+}
+
+.clientStoriesDetailPageImage:hover{
+    filter: brightness(1) !important;
+}
+.form-control:focus, .form-control:active{
+    box-shadow: none;
+    outline: none;
+}
+
+/*============================================================= header css  ============================================================== */
+.menu_services_logo {
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dimentions{
+  height: 7vh !important;
+  width: auto;
+}
+.dimentions-logo{
+    height: 7vh !important;
+    width: auto;
+    /* display: flex;
+    align-items: center; */
+  }
+  .dmt{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width :1440px){
+    .carausel-logo-img{
+    margin-top: -14px;
+   }
+}
+@media (max-width :1024px){
+    .carausel-logo-img{
+    margin-top: 0px;
+   }
+}
+.serviceList:hover .serviceName{
+    color: #cd1432;
+}
+.serviceList:hover .Strategy_Performance_Consulting_logo{
+    background-image: url(../images/icon_images/services_icons/Strategyp.png);
+}
+.serviceList:hover .Onshoreb_logo{
+    background-image: url(../images/icon_images/services_icons/Onshorep.png);
+
+}
+.serviceList:hover .Risk_Compliance_logo{
+    background-image: url(../new_icon_images/Governancep_red.png);
+
+}
+.serviceList:hover .businessSupport_logo {
+    background-image: url(../new_icon_images/BusinessSupportp.png);
+
+}
+.serviceList:hover .Legalb_logo{
+    background-image: url(../new_icon_images/Legalp.png);
+
+}
+.serviceList:hover .financial_capital_Services{
+    background-image: url(../images/icon_images/services_icons/Financial&Capitalp.png);
+}
+.serviceList:hover .Digital_Transformationb_logo{
+    background-image: url(../new_icon_images/Digital_Transformationp.png);
+}
+.serviceList:hover  .Capacityb_logo{
+    background-image: url(../new_icon_images/Capacityp.png);
+}
+
+.bannerDD {
+    background-color: #cd1432;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    /* width: 65%; */
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo img {
+    width: 45% !important;
+}
+
+/* .menu {
+    width: 46%;
+} */
+
+.menu ul a {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.menu ul li:hover {
+    color: #cd1432 !important;
+}
+
+.Contact_image {
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+.input-contact{
+    border: none;
+    border-bottom: 1.9px black solid !important;
+    border-radius: 0 !important;
+}
+.message-contact{
+    border: none;
+    border-bottom: 1.9px black solid !important;
+    border-radius: 0 !important;
+}
+@media (max-width: 460px)
+{
+    .ConnectUsBanner {
+        height: 16vh !important;
+    }
+    .bannerDD{
+        top: -32px !important;
+    }
+}
+@media (max-width: 768px)
+{
+    .ConnectUsBanner {
+        height: 40vh !important;
+    }
+    .bannerDD{
+        top: -32px !important;
+    }
+}
+.bg-img-contact{
+    background-image: linear-gradient(90deg,
+    rgba(255,255,255,0.75) 0%,
+    rgba(255,255,255,0.75) 100%),
+    url('../ecovis-images/ecovis-graphic.png') no-repeat center center fixed !important;
+   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.header_connectBTN {
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    box-shadow: 0px 2px 6px 0px grey;
+}
+
+.ourPresents,
+.ourValues {
+    background-color: #c4c4c4;
+}
+
+.ourPresents h3,
+.ourValues h3 {
+    line-height: 41px;
+    border-bottom: 2.5px solid;
+    width: 50%;
+}
+
+.ourPresents ul li span,
+.ourValues ul li span {
+    font-size: larger;
+}
+.sticky  {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    box-shadow: 6px 1px 15px 3px grey;
+  }
+  #myHeader {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: 25px;
+    z-index: 100;
+    height: 82px;
+  }
+/* ====================================================================== index page css ================================================================ */
+
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+}
+
+/* services section  */
+
+.service_icons {
+    width: 130px;
+}
+.services_logo {
+    height: 105px;
+    background-size: cover;
+}
+
+.offeringservicesHeading:hover {
+    color: #cd1432;
+}
+/* .financial_capital_Services{
+    /* background-image: url(../images/icon_images/services_icons/Financial&Capitalb.png); */
+/* } */
+.serviceColomn{
+    margin-bottom: 1.5rem;
+}
+/* .serviceColomn:hover .financial_capital_Services{
+    background-image: url(../images/icon_images/services_icons/Financial&Capitalp.png);
+} */
+
+
+.Strategy_Performance_Consulting_logo {
+    background-image: url(../images/icon_images/services_icons/Strategyb.png);
+
+}
+.serviceColomn:hover .Strategy_Performance_Consulting_logo{
+    background-image: url(../images/icon_images/services_icons/Strategyp.png);
+
+}
+.Onshoreb_logo{
+    background-image: url(../images/icon_images/services_icons/Onshoreb.png);
+
+}
+.serviceColomn:hover .Onshoreb_logo{
+    background-image: url(../images/icon_images/services_icons/Onshorep.png);
+
+}
+.Risk_Compliance_logo{
+    background-image: url(../new_icon_images/Governanceb_black.png);
+}
+.serviceColomn:hover .Risk_Compliance_logo{
+    background-image: url(../new_icon_images/Governancep_red.png);
+
+}
+.businessSupport_logo {
+    background-image: url(../new_icon_images/BusinessSupportb.png);
+
+}
+.Legalb_logo{
+    background-image: url(../new_icon_images/Legalb.png);
+}
+.serviceColomn:hover .Legalb_logo{
+    background-image: url('../new_icon_images/Legalp.png');
+
+}
+.Digital_Transformationb_logo{
+    background-image: url(../new_icon_images/Digital_Transformationb.png);
+}
+.serviceColomn:hover .Digital_Transformationb_logo{
+    background-image: url(../new_icon_images/Digital_Transformationp.png);
+}
+.Capacityb_logo{
+    background-image: url(../new_icon_images/Capacityb.png);
+}
+.serviceColomn:hover .Capacityb_logo{
+    background-image: url(../new_icon_images/Capacityp.png);
+}
+.serviceColomn:hover .businessSupport_logo,
+.serviceColomn:hover .offeringservicesHeading {
+    color: #cd1432;
+    background-image: url(../new_icon_images/BusinessSupportp.png);
+
+}
+
+/* client stories section  */
+
+.client_stories_images {
+    height: 221px !important;
+    filter: brightness(.5);
+}
+.client_stories_card:hover .client_stories_images{
+    filter: brightness(1);
+}
+
+.client_story:hover .client_stories_images{
+    filter: brightness(1);
+}
+
+/* /client stories section  */
+
+/* owl .carousel css  */
+
+.owl_carousel_caption {
+    position: absolute;
+    bottom: 5%;
+}
+
+.owl-item {
+    display: flex;
+    justify-content: space-around;
+}
+.offeringservicesdetails {
+    font-size: var(--secondry_font_size);
+}
+
+
+
+/* heramhbh css  */
+/* owl .carousel css  */
+
+.owl-carousel button .next-slide {
+    position: absolute;
+    top: 38%;
+    background: white;
+    right: 0%;
+}
+
+.owl-carousel button .next-slide:hover,
+.owl-carousel button .prev-slide:hover {
+    background-color: var(--greenTheme);
+    color: var(--textWhiteColor);
+    border: var(--onHoverTextColor);
+}
+
+.owl-carousel button .prev-slide {
+    position: absolute;
+    top: 38%;
+    background: white;
+    left: 1%;
+}
+
+.nav-link {
+    color: #1ab293;
+}
+
+.prenavigate,
+.postnavigate {
+    box-shadow: 0px 1px 2px 0px darkgrey;
+    font-size: 24px;
+    padding: 0px 11px !important;
+    border-radius: 3px;
+    color: #cd1432;
+    background: transparent;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0px !important;
+}
+
+.prenavigate:focus-visible,
+.postnavigate:focus-visible {
+    border: 2px solid var(--greenTheme);
+    outline: none !important;
+}
+
+/* footer css */
+footer {
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: var(--secondry_font_size);
+}
+
+footer a li {
+    margin-bottom: var(--list_margin_bottom);
+}
+
+footer a:hover {
+    color: whitesmoke;
+    font-size: var(--secondry_font_size);
+}
+
+ul {
+    list-style: none;
+}
+
+.social_icons .linkedInLogo,
+.social_icons .instaLogo,
+.social_icons .facebookLogo {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* careear page css */
+
+.careearBanner{
+    background-image: url(../images/ecovis_banners/homepage_b3_job_vaccancies.png);
+
+}
+
+.job_title {
+    background-color: #cd1432;
+    width: 20%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.job-title {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.lets_connect {
+    background-color: #cd1432;
+    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+
+}
+
+.lets_connect_button {
+    background-color: transparent;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    margin-top: 0px;
+    border: 1px solid white;
+    justify-content: center;
+}
+
+/* map  */
+.jvectormap-container {
+    height: 100%;
+    width: 100%;
+}
+
+.pin {
+    color: red;
+}
+
+.jvectormap-legend-inner {
+    margin-bottom: 3px;
+}
+
+.jvectormap-legend-cnt-h .jvectormap-legend-tick {
+    width: auto;
+    margin-right: 10px;
+}
+
+.jvectormap-legend-cnt-h .jvectormap-legend-tick-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 13px;
+}
+
+.jvectormap-legend-cnt-h .jvectormap-legend-tick-sample {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.jvectormap-marker {
+    font-size: 12px;
+    fill: black;
+}
+
+.jvectormap-container circle {
+    fill: red;
+}
+
+.client_story {
+    width: 95%;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.client_story img {
+    max-height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* .client_stories_heading {
+    font-size: var(--primary_Font_size);
+} */
+
+.client_stories_details {
+    font-size: var(--secondry_font_size);
+}
+
+.select_location {
+    background: #ededed;
+    margin: auto;
+    display: none;
+}
+
+#indexProblem {
+    width: 25%;
+    box-shadow: 0px 2px 4px 0px darkslategrey;
+}
+
+.banner_text {
+    font-size: var(--content_heading);
+    font-weight: var(--heading_font_weight);
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 45%;
+    top: 48%;
+}
+
+/* .careers_banner_text {
+    font-size: var(--content_heading);
+    font-weight: var(--heading_font_weight);
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 47%;
+    top: 48%;
+} */
+
+
+
+.bannerDiv {
+    background-image: url(../images/ecovis_banners/homepage_b2_our_team.png);
+}
+
+.ConnectUsBanner {
+    background-image: url(../ecovis-images/CONACT_US_BANNER.png);
+    filter: brightness(1);
+
+}
+
+
+/* .careers_banner_subtext {
+    font-size: var(--primary_Font_size);
+    font-weight: var(--box_normal_text);
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 39%;
+    top: 55%;
+} */
+
+.job_post {
+    font-size: var(--primary_Font_size);
+    font-weight: var(--heading_font_weight);
+}
+
+.job-title,
+.job_post_discription {
+    font-size: var(--secondry_font_size);
+    font-weight: var(--box_normal_text);
+}
+
+/* client stories page css  */
+#clientStory_categry {
+    box-shadow: var(--box-shadow);
+}
+
+.clientStoryHeading {
+    font-size: var(--primary_Font_size);
+    font-weight: var(--heading_font_weight);
+}
+
+.clientStoryDetails {
+    font-size: var(--secondry_font_size);
+    font-weight: var(--box_normal_text);
+}
+
+.collabrate_banner_text {
+    font-size: var(--content_heading);
+    font-weight: var(--heading_font_weight);
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 46%;
+    top: 37%;
+}
+
+.collabrate_banner_subtext {
+    font-size: var(--primary_Font_size);
+    font-weight: var(--box_normal_text);
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 20%;
+    width: 60%;
+    top: 50%;
+}
+.clientStoriesBannaer{
+    background-image: url(../images/ecovis_banners/client_stories.png);
+    filter: brightness(1);
+}
+
+/* .menterBiheader{
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 47%;
+    top: 33%;
+} */
+.menterBidetail {
+    position: absolute;
+    top: 0%;
+    color: whitesmoke;
+    left: 42%;
+    top: 44%;
+}
+
+/* media query  */
+
+@media only screen and (min-width: 1439px) {
+
+    /* index page  */
+    /* .menu {
+        width: 48% !important;
+    } */
+
+    #indexProblem {
+        width: 25% !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* index page  */
+    /* .menu {
+        width: 70%;
+    } */
+
+    .logo img {
+        width: 65% !important;
+    }
+
+    #indexProblem {
+        width: 35% !important;
+    }
+}
+@media screen and (max-width:1024px){
+    #client_stories_1{
+        height: 175px !important;
+    }
+    .menu {
+        width: 75% !important;
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+
+    /* index page  */
+    #homebannner {
+        z-index: -1;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 30%;
+        right: 0%;
+    }
+
+    .menu ul {
+        display: block !important;
+        z-index: 11 !important;
+        background: whitesmoke;
+
+    }
+
+    .menu ul li {
+        padding: 5px 40px;
+    }
+
+    .menu ul li:hover {
+        background-color: #cd143336;
+        font-weight: 600;
+    }
+
+    .logo img {
+        width: 100px !important;
+    }
+
+    .menu_icon {
+        display: block !important;
+    }
+
+    #indexProblem {
+        width: 55% !important;
+    }
+   
+}
+
+@media only screen and (max-width: 559px) {
+    .menu {
+        width: 50%;
+    }
+
+    #indexProblem {
+        width: 95% !important;
+    }
+    .client_story{
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+/* ======================================================== ecovis services page  ===================================================================== */
+
+/* Strategy_Performance_Consulting_services page  */
+
+.Strategy_Performance_Consulting_servicesBanner{
+    background-image: url(../images/ecovis_banners/strategy_perfomance_consulting.png);
+    filter: brightness(1);
+}
+
+.collabrationBanner{
+    background-image: url(../images/ecovis_banners/mentor_bi.png);
+    filter:brightness(0.7);
+    z-index: 0;
+    position: relative;
+}
+.ourSolutionDropDowndiv{
+    width: 100%;
+    justify-content: center;
+    background: white;
+    padding: 27px;
+    margin-top: -50px;
+    box-shadow: 0px 12px 18px -6px rgba(29,37,45,0.2);
+    z-index: 5!important;
+    position: relative;
+}
+.form-select{
+    color: #ffffff;
+    background-color:#1d252d;
+    padding: 16px 20px 16px 16px;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    /* -moz-appearance: none;
+    -webkit-appearance: none; 
+    appearance: none; */
+    border-radius: 0;
+}
+  .options{
+    padding: 3px;
+  }
+
+  @media only screen and (max-width: 559px) {
+    #cardsdiv{
+        width: 600px !important;
+        margin: 0px !important;
+    }
+  } 
+  .card-img-top{
+    height: 150px;
+    filter: brightness(.5);
+  }
+  .singlecard{
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 15px 0px !important;
+  }
+  .singlecard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* box shadow on hover */
+    /* filter: brightness(1); */
+  }
+  .singlecard :hover .card-img-top{
+    filter: brightness(1);
+}
+ 
+
+.card-img-top:hover{
+    /* filter: brightness(1) !important; */
+}
+
+/* ecovis international page css  */
+
+.ecovisInternationalBanner{
+    background-image: url(../images/ecovis_banners/ecovis_intl_banner.png);
+    /* background-image: url(); */
+    filter: brightness(1);
+
+}
+/* team about me pages */
+
+
+.aboutMeName{
+    color: white;
+    display: flex;
+    align-self: center;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: serif;
+    justify-content: center;
+}
+
+.img-style-about{
+    width:250px ;
+    border-radius:50%;
+    box-shadow: 2px -1px 8px 2px;
+    width: inherit !important;
+}
+
+/* ecovisIndia page css  */
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+.ecovisIndiaBanner{
+    background-image: url(../images/ecovis_banners/homepage_b1_ecovis_india.png);
+    /* filter: brightness(2) !important; */
+}
+.team-person-div{
+    transition: transform .6s;
+}
+.team-person-div:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  .memberpage{
+    text-decoration: none;
+    color: black;
+  }
+  .memberpage:hover{
+    text-decoration: none;
+    color: black;
+  }
+  .red-info-div-1,.red-info-div-2{
+    background-color: #cd1432;
+    padding: 30px 0px;
+  }
+  .red-info{
+    background-color: #cd1432;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 35px 38px 90px 38px;
+    margin-top: -3px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourTeamDropDowndiv{
+    width: 100%;
+    justify-content: center;
+    background: white;
+    padding: 27px;
+    margin-top: -30px;
+    box-shadow: 0px 12px 18px -6px rgba(29,37,45,0.2);
+    z-index: 5!important;
+    position: relative;
+}
+.team-search{
+    height: -webkit-fill-available;
+    background-color: #1d252d;
+    width: inherit;
+    color: white;
+    padding: 13px 10px;
+}
+input:focus,select:focus{
+    outline: none;
+}
+.ourTeamDropDowndiv ::placeholder{
+    color: white;
+    font-size: 13px;
+}
+select{
+    color: white;
+}
+.desc-div-team{
+  display: flex;
+  justify-content: center;
+}
+.change-img-Rameshwarlal_Badrilalji_Kabra:hover{
+    /* content:url("../OurTeam/02_Dheeraj_rathi.jpg"); */
+}
+.change-img-Asit_Pal:hover{
+    content:url("../OurTeam/asit_pal.png");
+}
+.change-img-M_D_Kabra:hover{
+    content:url("../OurTeam/MDKabra.png");
+}
+.change-img-S_C_Kabra:hover{
+    content:url("../OurTeam/SCKabra.png");
+}
+.change-img-R_S_Kela:hover{
+    content:url("../OurTeam/r.s.kela.png");
+}
+.change-img-Pankaj_Bhargava:hover{
+    content:url("../OurTeam/01_Pankaj_Bhargava.jpg");
+}
+.change-img-Dheeraj_Rathi:hover{
+    content:url("../OurTeam/02_Dheeraj_rathi.jpg");
+}
+.change-img-Sanjeev_Bindal:hover{
+    content:url("../OurTeam/06_Sanjeev_Bindal.jpg");
+}
+.change-img-Deepa_Rathi:hover{
+    content:url("../ourTeam_B&W/21_Deepa_rathi.png");
+}
+.change-img-Shruti_Ambegaonkar:hover{
+    content:url("../ourTeam_B&W/22_shruti.jpg");
+}
+.change-img-Manish_Adukia:hover{
+    content:url("../OurTeam/05_Manish_Adukia.jpg");
+}
+.change-img-Parag_Shah:hover{
+    content:url("../OurTeam/09_Parag_Shah.jpg");
+}
+.change-img-Bharat_Mishra:hover{
+    content:url("../OurTeam/03_Bharat_Mishra.jpg");
+}
+.change-img-D_Balasubramaniam:hover{
+    content:url("../OurTeam/10_D._Bala.JPG");
+}
+.change-img-Siddharth_Baghmar:hover{
+    content:url("../OurTeam/13_Siddharth_Baghmar.jpg");
+}
+.change-img-Sanjay_Surana:hover{
+    content:url("../OurTeam/07_Sanjay_Surana.jpg");
+}
+.change-img-Ram_Verma:hover{
+    content:url("../OurTeam/08_Ram_Verma.jpg");
+}
+.change-img-Manju_Latha_Boob:hover{
+    content:url("../OurTeam/12_Manju_Latha_Boob.jpg");
+}
+.change-img-Pradip_Das:hover{
+    content:url("../OurTeam/pradip-das.png");
+}
+.change-img-Jaigovind_Boob:hover{
+    content:url("../OurTeam/14_Jaigovind_boob.jpg");
+}
+.change-img-Rahul_Nagar:hover{
+    content:url("../OurTeam/11_Rahul_Nagar.jpg");
+}
+.change-img-Pankaj_Monga:hover{
+
+    /* content:url("../OurTeam/pa"); */
+}
+.change-img-K_C_Gupta:hover{
+    content:url("../OurTeam/kc_gupta.png");
+}
+/* @media (max-width :480px){
+    .remove-width{
+    width: 0px !important;
+}
+} */
+.memberName{
+    font-size:  22px !important;
+    font-weight: 800;
+    text-transform: uppercase!important;
+    font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+    line-height: 1.5em;
+}
+.details{
+    font-size: 15px;
+    font-family: cursive;
+    font-style: italic;
+    color: #cd1432;
+    line-height: 1.6em;
+}
+/* marketing_head page css  */
+
+.marketing_headBanner{
+background-image: url(../images/ecovis_banners/marketing_head_banner.png);
+filter: brightness(1);
+
+}
+/* Business_Analyst page css  */
+
+.Business_AnalystBanner{
+    background-image: url(../images/ecovis_banners/business_analys_banner.png);
+    filter: brightness(1);
+}
+
+/* jobapplication page css  */
+
+.jobapplicationBanner{
+    background-image: url(../images/ecovis_banners/Apply_banner.png);
+}
+
+/* Private_Limited_CompanyBanner */
+
+.Private_Limited_CompanyBanner{
+    background-image: url(../images/ecovis_banners/Apply_banner.png);
+}
+.One_Person_CompanyBanner{
+    background-image: url(../images/ecovis_banners/one_person_company.png);
+}
+.Business_RestructuringBanner{
+    background-image: url(../images/ecovis_banners/business_restructuring.png);
+
+}
+.Succession_PlanningBanner{
+    background-image: url(../images/ecovis_banners/Succession_planning.png);
+}
+
+::-webkit-scrollbar { 
+    width: 0px!important;
+  }
+
+
+
+  #videoContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    height: 180px;
+    border: 1px solid #ccc;
+  }
