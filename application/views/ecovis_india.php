@@ -86,500 +86,157 @@
         background-color: whitesmoke;
     }
 </style>
- <script>
-  let MembersDatas=[
-  { key:'Pankaj_Bhargava',
-    img: '<?= base_url()?>assets/ourTeam_B&W/01_Pankaj_Bhargava.jpg', 
-    Name: "Pankaj Bhargava",
-    emailId: 'Pankaj_Bhargava@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-4',
-    post:'Strategy & Performance Consulting',
-    location:'7 Mall Road, Kolkata'
-  },
-  { key:'Sanjeev_Bindal',
-    img: '<?= base_url()?>assets/ourTeam_B&W/06_Sanjeev_Bindal.jpg', 
-    Name: "Sanjeev Bindal",
-    emailId: 'Pankaj_Bhargava@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-4',
-    post:'Litigation & Legal Services',
-    location:'Ganga Soc, Shahibaug'
-  },
-  { key:'Dheeraj_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/02_Dheeraj_rathi.jpg', 
-    Name: "Dheeraj Rathi",
-    emailId: 'Dheeraj_Rathi@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-4',
-    post:'Cross border & Merchant Banking Advice',
-    location:'Raj Bhavan Road, Hyderabad'
-  },
-  { key:'Shruti_Ambegaonkar',
-    img: '<?= base_url()?>assets/ourTeam_B&W/22_shruti.jpg', 
-    Name: "Shruti Ambegaonkar",
-    emailId: 'Shruti_Ambegaonkar@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Strategy & Performance Consulting',
-    location:'Vikhroli - W, Mumbai '
-  },
-  { key:'Deepa_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/21_Deepa_rathi.png', 
-    Name: "Deepa Rathi",
-    emailId: 'Deepa_Rathi@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post :'On shore and Off shore Advisory',
-    location:'Konditope, Chennai',
-  },
-  { key:'Pankaj_Monga',
-    img: '<?= base_url()?>assets/ourTeam_B&W/23_pankaj_monga.jpeg', 
-    Name: "Pankaj Monga",
-    emailId: 'Pankaj_Monga@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Legal, Risk and IPR Practice',
-    location:'Shastri Nagar, New Delhi'
-  },
-  { key:'Manish_Adukia',
-    img: '<?= base_url()?>assets/ourTeam_B&W/05_Manish_Adukia.jpg', 
-    Name: "Manish Adukia",
-    emailId: 'Manish_Adukia@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Business Support & Financial Reporting',
-    location:'Ganga Soc, Shahibaug'
-  },
-  { key:'Litigation',
-    img: '', 
-    Name: "Litigation",
-    emailId: 'Litigation@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Litigation,GRC Transaction Advisory',
-    location:'Kolkata'
-  },
-  { key:'Parag_Shah',
-    img: '<?= base_url()?>assets/ourTeam_B&W/09_Parag_Shah.jpg', 
-    Name: "Parag shah",
-    emailId: 'Parag_shah@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Lead Financial and Capital Services',
-    location:'Nariman Point,Mumbai'
-  },
-  { key:'Bharat_Mishra',
-    img: '<?= base_url()?>assets/ourTeam_B&W/03_Bharat_Mishra.jpg', 
-    Name: "Bharat Mishtra",
-    emailId: 'Bharat_Mishtra@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Digital Transformation',
-    location:'Dhantoli, Nagpur'
-  },
-  { key:'D._Bala',
-    img: '<?= base_url()?>assets/ourTeam_B&W/10_Bala.png', 
-    Name: "D. Bala",
-    emailId: 'D_Bala@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Cross Border & Merchant Banking Advice',
-    location:'Vashi, Navi Mumbai'
-  },
-  
-  ]
-  let Members =[
-  { key:'Rameshwarlal_Badrilalji_Kabra',
-    img: '', 
-    Name: `Rameshwarlal Badrilalji Kabra`,
-    emailId: 'rlkabra@rkca.net' ,
-    specialist:['Close to 5 decades of experience across industries ', 'geographies and economic cycles.'],
-    qualification:['B Com','FCA', 'CFE','CA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Taxation',
-    location:'7 Mall Road, Kolkata'
-  },
-  { key:'Asit_Pal',
-    img: '<?= base_url()?>assets/ourTeam_B&W/asit_pal.png', 
-    Name: "Asit Pal",
-    emailId: 'asit@rkca.net' ,
-    specialist:[],
-    qualification:['CA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Mentor',
-    location:'7 Mall Road, Kolkata'
-  },
-  { key:'M_D_Kabra',
-    img: '<?= base_url()?>assets/ourTeam_B&W/MDKabra.png', 
-    Name: "M. D. Kabra",
-    emailId: 'md.kabra@ecovis.co.uk' ,
-    specialist:[],
-    qualification:[],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Taxation',
-    location:'7 Mall Road, Kolkata'
-  },
-  {  key:'S_C_Kabra',
-    img: '<?= base_url()?>assets/ourTeam_B&W/SCKabra.png', 
-    Name: "S. C. Kabra",
-    emailId: 'sc.kabra@ecovisrkca.com' ,
-    specialist:[],
-    qualification:[],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Taxation',
-    location:'7 Mall Road, Kolkata'
-  },
-  { key:'R_S_Kela',
-    img: '<?= base_url()?>assets/ourTeam_B&W/r.s.kela.png', 
-    Name: "R. S. Kela",
-    emailId: 'rs.kela@ecovisrkca.com' ,
-    specialist:['Tax Planning', 'Transfer Pricing',' Tax Litigation'],
-    qualification:['LLB', 'Law','Advocate'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Strategy & Performance Consulting',
-    location:'7 Mall Road, Kolkata'
-  },
-  {  key:'Dheeraj_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/02_Dheeraj_rathi.jpg', 
-    Name: "Dheeraj Rathi",
-    emailId: 'drathi@ecovisrkca.com' ,
+<script>
 
-    specialist:['Business Strategy Management Systems Consulting',"Risk Management Process Improvement Change Management"],
 
-    qualification:['B Tech (JNVU)', 'MoM (IIT,B)','CIRM (APICS)',"USA Certified Fraud Examiner- USA","Forensic Audito"],
+let mainData=[];
 
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Org Growth and Expansion',
-    location:'Raj Bhavan Road, Hyderabad'
-  },
-  { key:'Pankaj_Bhargav',
-    img: '<?= base_url()?>assets/ourTeam_B&W/01_Pankaj_Bhargava.jpg', 
-    Name: "Pankaj Bhargav",
-    emailId: 'Pankaj_Bhargava@ecovis.co.uk' ,
-    specialist:['Human Resources Management Facilitation','Business Growth',
-    'Business Strategy'],
-    qualification:['B.Tech(IITB)',' PGDM HR (IIM K)','CToPF'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Org Culture and Accountability',
-    location:'7 Mall Road, Kolkata'
-  },
-  { key:'Sanjeev_Bindal',
-    img: '<?= base_url()?>assets/ourTeam_B&W/06_Sanjeev_Bindal.jpg', 
-    Name: "Sanjeev Bindal",
-    emailId: 'sanjeev.bindal@rkca.net' ,
+     function onLoadPage(){
 
-    specialist:['Mergers and Acquisitions','Initial Public Offerings','Litigation Management','Compliance and Regulatory Affairs'],
+         $.ajax({
+             url:"<?php echo base_url(); ?>Welcome/getAllMemberDetails",
+             method:"GET",
+             dataType : 'json',
+             success:function(memberData){
+                 var data=memberData;
+                 mainData=memberData;
+                 console.log("Data is ",data);
+                 if (searchValue.length == 0) {
+                     commomMapfunction(mainData)
+                 } else {
+                 onSearch();
+                 }   
 
-    qualification:['LLB' ,'Law','FCS | Diploma in IPR and Insolvency Professional'],
+             },
+             error:function (xhr, ajaxOptions, thrownError){
+                 alert('error');
+             }
 
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Litigation & Legal Services',
-    location:'Ganga Soc, Shahibaug'
-  },
-  { key:'Deepa_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/21_Deepa_rathi.png', 
-    Name: "Deepa Rathi",
-    emailId: 'deepa@rkabra.net' ,
-    specialist:['Information System Audit','Public Relations','Resolution Professional'],
-    qualification:['CA','A certified Insolvency professional and Depository Participant| DISA |Concurrent Auditor| Forensic Auditor | Qualified CompanySecretary'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post :'On shore and Off shore Advisory',
-    location:'Konditope, Chennai',
-  },
-  { key:'Shruti_Ambegaonkar',
-    img: '<?= base_url()?>assets/ourTeam_B&W/22_shruti.jpg', 
-    Name: "Shruti Ambegaonkar",
-    emailId: 'Shruti_Ambegaonkar@ecovisrkca.in' ,
-    // specialist:['Corporate Tax','International Tax','VAT'],
-    // qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Lead Strategy and Performance Consulting',
-    location:'Vikhroli - W, Mumbai '
-  },
-  { key:'Manish_Adukia',
-    img: '<?= base_url()?>assets/ourTeam_B&W/05_Manish_Adukia.jpg', 
-    Name: "Manish Adukia",
-    emailId: 'manish.a@ecovisrkca.com' ,
-    specialist:['Business Valuation', 'Forensic Accounting', 'Strategic Financial Planning','Treasury Management', 'Capital Budgeting'],
-    qualification:['CA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Lead Business Support  and Financial Reporting',
-    location:'Ganga Soc, Shahibaug'
-  },
-  { key:'Parag_Shah',
-    img: '<?= base_url()?>assets/ourTeam_B&W/09_Parag_Shah.jpg', 
-    Name: "Parag shah",
-    emailId: 'Parag_shah@ecovis.co.uk' ,
-    specialist:['Investment Analysis', 'Financial Forecasting Fraud Detection', 'Litigation Support Capital Budgeting','Financial Risk Management'],
+         })
 
-    qualification:['Business law and auditing |CA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Financial & Capital Services',
-    location:'Nariman Point,Mumbai'
-  },
-  { key:'Bharat_Mishra',
-    img: '<?= base_url()?>assets/ourTeam_B&W/03_Bharat_Mishra.jpg', 
-    Name: "Bharat Mishtra",
-    emailId: 'bharat@gbtech.in' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['B Tech (IIT-G)', 'MS (Georgia Tech, USA)','MBA (SP Jain)'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Lead Digital Transformation and Tech Solution',
-    location:'Dhantoli, Nagpur'
-  },
-  { key:'D_Balasubramaniam',
-    img: '<?= base_url()?>assets/ourTeam_B&W/10_Bala.png', 
-    Name: "D. Balasubramaniam",
-    emailId: 'd.bala@ecovisrkca.com' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['MBA','Financial and Banking Service'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Lead Legal and GRC Services',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Siddharth_Baghmar',
-    img: '<?= base_url()?>assets/ourTeam_B&W/13_Siddharth_Baghmar.jpg', 
-    Name: "Siddharth Baghmar",
-    emailId: 'D_Bala@ecovis.co.uk' ,
-    specialist:['Financial and Banking Service','Direct Taxation',' Indirect Taxation', 'Statutory & Internal Audits & GST.'],
-    qualification:['CA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Cross Border & Merchant Banking Advice',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Sanjay_Surana',
-    img: '<?= base_url()?>assets/ourTeam_B&W/07_Sanjay_Surana.jpg', 
-    Name: "Sanjay Surana",
-    emailId: 'D_Bala@ecovis.co.uk' ,
-    specialist:['Tax Planning','Transfer Pricing','GST Consulting','International Taxation'],
-    qualification:['B Comm', 'FCA','DISA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Cross Border & Merchant Banking Advice',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Rajendra_Kothari',
-    img: '', 
-    Name: "Rajendra_Kothari",
-    emailId: 'r.kothari@ecovisrkca.com' ,
-    specialist:['Financial and Banking Service','Direct Taxation',' Indirect Taxation', 'Statutory & Internal Audits & GST.'],
-    qualification:['CA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Business Franchise',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Ram_Verma',
-    img: '<?= base_url()?>assets/ourTeam_B&W/08_Ram_Verma.jpg', 
-    Name: "Ram Verma",
-    emailId: 'r.verma@ecovisrkca.com' ,
-    specialist:['Statutory audits', 'internal audits','bank audits  & accounts across the industry sectors.'],
-    qualification:['CA','Financial and Banking Service'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Business Franchise',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Manju_Latha_Boob',
-    img: '<?= base_url()?>assets/ourTeam_B&W/12_Manju_Latha_Boob.jpg', 
-    Name: "Manju Latha Boob",
-    emailId: 'manju@ecovisrkca.com' ,
-    specialist:['Taxation','Auditing','Financial Consulting'],
-    qualification:['B Com', 'FCA', 'CFE (USA)'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Partner',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Pradip_Das',
-    img: '<?= base_url()?>assets/ourTeam_B&W/pradip-das.png', 
-    Name: "Pradip Das",
-    emailId: 'pradip@ecovisrkca.com',
-    specialist:['Financial and Banking Service'],
-    qualification:['B Com', 'FCA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Senior Partner',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Jaigovind_Boob',
-    img: '<?= base_url()?>assets/ourTeam_B&W/14_Jaigovind_boob.jpg', 
-    Name: "Manju Latha Boob",
-    emailId: 'jaigovind@ecovisrkca.com' ,
-    specialist:['Risk Management Consulting','Forensic Accounting','Corporate Governance', 'Process Optimization'],
-    qualification:['B Com', 'FCA', 'CFE (USA)'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Partner',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Rahul_Nagar',
-    img: '<?= base_url()?>assets/ourTeam_B&W/11_Rahul_Nagar.jpg', 
-    Name: "Rahul Nagar",
-    emailId: 'jaigovind@ecovisrkca.com' ,
-    specialist:['Assurance Services','Transaction Advisory','Internal Audits'],
-    qualification:['B Com', 'FCA'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Partner',
-    location:'Vashi, Navi Mumbai'
-  },
-  { key:'Pankaj_Monga',
-    img: '<?= base_url()?>assets/ourTeam_B&W/23_pankaj_monga.jpeg', 
-    Name: "Pankaj Monga",
-    emailId: 'Pankaj_Monga@ecovis.co.uk' ,
-    specialist:['Anti-Counterfeiting','Anti-Diversion','Product Tampering','IP Strategy'],
-    qualification:['Diploma in Tax law', 'Diploma in Corporate laws and management'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Legal, Risk and IPR Practice',
-    location:'Shastri Nagar, New Delhi'
-  },
-  { key:'K_C_Gupta',
-    img: '<?= base_url()?>assets/ourTeam_B&W/kc_gupta.png', 
-    Name: "K. C. Gupta",
-    emailId: 'Pankaj_Monga@ecovis.co.uk' ,
-    specialist:['Taxation'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    class:'col-lg-3',
-    post:'Partner',
-    location:'Shastri Nagar, New Delhi'
-  },
-  ]
-    let searchArray=[];
-    var selectValue=[];
-    var searchValue='';
-    var postFlag=0;
-    var locationFlag=0;
-        function commomMapfunction(array){
-            let mappedCards=[];
-            array.map((member,index)=>{
-                    mappedCards += ` <div class="${member.class} mb-5 col-md-4 col-sm-6 text-center team-person-div">
-                        <a href="<?= base_url()?>TeamAboutMe?name=${member.key}" class="memberpage">
-                        <div class="mx-auto " style="width: 200px; height: 200px; overflow: hidden;">
-                            <img src=${member.img} class="w-100 rounded-circle change-img-${member.key}" alt="">
-                        </div>
-                        <div class="desc-div-team py-2">
-                        <div class='py-2'>
-                        <h2 class="memberName mb-0" style='' >${member.Name}</h2>
-                        <p class="normalText mt-2 mb-2" style= ''>${member.post}</p>
-                        <p class="details mb-0" style= ''>${member.emailId}</p>
-                        <p class="details mb-0" style= ''>${member.location}</p>
-                        </div>
-                        </div>
-                    </a>
-                </div>`
-        })
-        $("#membersDiv").html(mappedCards); 
-        }
 
-        function onLoadPage(){
-        if (searchValue.length == 0) {
-            commomMapfunction(Members)
-        } else {
-        onSearch();
-        }   
-        }
+        
+     }
+ let searchArray=[];
+ var selectValue=[];
+ var searchValue='';
+ var postFlag=0;
+ var locationFlag=0;
 
-        function onSearch(){
-            let filteredData = []; 
-            let mappedCards=[];
-            let mapArray= postFlag == 0 && locationFlag == 0 ?  Members : searchArray
-            if(event.target.value !== undefined){
-            searchValue = event.target.value.toLowerCase();
-            for (var i = 0; i < mapArray.length; i++) {
-            var obj = mapArray[i];
-            if (obj.Name.toLowerCase().includes(searchValue) || obj.post.toLowerCase().includes(searchValue)) {
-            
-                filteredData.push(obj);
-                
-            }
-            }
-            }
-        //    console.log(filteredData,'filter data');
-        searchArray=filteredData;
-        commomMapfunction(filteredData);
-        }
-        function onSelectPost(){
-            let mappedCards=[];
-            let filteredData=[];
-            let filterArray= searchValue  == 0 && locationFlag == 0 ? Members : searchArray;
-            let count=0;
-            console.log('visited' , count );
-        console.log(searchArray,"###");
-            if(event.target.value == 'Our Services'){
-                postFlag=0;
-                filteredData = filterArray;
-                console.log(filteredData);
-                defaultSelectPost=event.target.value;
-            }
-            else{
-                postFlag=1;
-            filteredData = filterArray.filter(function(obj) {
-            return obj.post === event.target.value;
-            });
-            selectValue=filteredData
-            searchArray=filteredData;
-            }
-            commomMapfunction(filteredData);
-        }
 
-        function onSelectLocation(){
-            console.log(event.target.value);
-            let mapArrayLocation= searchValue.length == 0 && postFlag == 0  ? Members : searchArray
-            if(event.target.value == 'location'){
-                locationFlag=0;
-                return commomMapfunction(mapArrayLocation)
-            }
-            else{
-                locationFlag=1;
-                var nameObject=mapArrayLocation.filter((object) => {
-                return  object.location.includes(event.target.value)
-                })
-                console.log(nameObject);
-                searchArray=nameObject;
-                commomMapfunction(nameObject)
-            }
-        }
+     function commomMapfunction(array){
+         // console.log("commomMapfunction",array);
+         let mappedCards=[];
+         array.map((member,index)=>{
+                 mappedCards += ` <div class="col-md-3 mb-5 col-md-4 col-sm-6 text-center team-person-div">
+                     <a href="<?=base_url()?>welcome/TeamAboutMe?name=${member.key_name}" class="memberpage">
+                     <div class="mx-auto " style="width: 200px; height: 200px; overflow: hidden;">
+                         <img src="<?=base_url()?>${member.image}" class="w-100 rounded-circle change-img-filter" alt="">
+                     </div>
+                     <div class="desc-div-team py-2">
+                     <div class='py-2'>
+                     <h2 class="memberName mb-0" style='' >${member.name}</h2>
+                     <p class="normalText mt-2 mb-2" style= ''>${member.designation}</p>
+                     <p class="details mb-0" style= ''>${member.email}</p>
+                   
+                     </div>
+                     </div>
+                 </a>
+             </div>`
+     })
+     $("#membersDiv").html(mappedCards); 
+     }
+
+     // <p class="details mb-0" style= ''>${member.location}</p>
+
+     function onSearch(){
+         let filteredData = []; 
+         let mappedCards=[];
+         console.log(searchArray,'hdchjs');
+         console.log(postFlag == 0 && locationFlag == 0,'flaggg');
+         let mapArray= postFlag == 0 && locationFlag == 0 ?  mainData : searchArray
+         if(event.target.value !== undefined){
+         searchValue = event.target.value.toLowerCase();
+         for (var i = 0; i < mapArray.length; i++) {
+         var obj = mapArray[i];
+         if (obj.name.toLowerCase().includes(searchValue) || obj.designation.toLowerCase().includes(searchValue)) { 
+             filteredData.push(obj);    
+         }
+         }
+         }
+     //    console.log(filteredData,'filter data');
+     searchArray=filteredData;
+     console.log(searchArray,'hdchjs');
+     // console.log(searchArray,'searchArray');
+     commomMapfunction(filteredData);
+         if (postFlag == 0 && locationFlag==0 && searchValue.length == 0) {
+     
+             document.getElementById("reset-button").disabled=true;
+             document.getElementById("reset-button").title='No Filters Applied'
+         } else {
+             document.getElementById("reset-button").disabled=false;
+             document.getElementById("reset-button").setAttribute.title='Clear All Filters'
+         }
+     }
+     function onSelectPost(searchArray) {
+         let mappedCards = [];
+         let filteredData = [];
+         
+         // Determine the array to use based on searchValue and locationFlag
+         let filterArray = searchValue == 0 && locationFlag == 0 ? mainData : searchArray;
+
+         if (event.target.value == 'Our Services') {
+             // If the "Our Services" option is selected, reset the postFlag and use mainData
+             postFlag = 0;
+             filteredData = filterArray;
+             defaultSelectPost = event.target.value;
+         } else {
+             // If a specific post is selected, set postFlag to 1 and filter based on the selected value
+             postFlag = 1;
+             filteredData = filterArray.filter(function (obj) {
+                 return obj.designation === event.target.value;
+             });
+             selectValue = filteredData;
+             searchArray = filteredData;
+         }
+         
+         commomMapfunction(filteredData);
+         if (postFlag == 0 && locationFlag==0 && searchValue.length == 0) {
+    
+                 document.getElementById("reset-button").disabled=true;
+                 document.getElementById("reset-button").title='No Filters Applied'
+             } else {
+                 document.getElementById("reset-button").disabled=false;
+                 document.getElementById("reset-button").title='Clear All Filters';
+             }
+     }
+
+
+     function onSelectLocation(searchArray){
+         console.log(event.target.value);
+         let mapArrayLocation= searchValue.length == 0 && postFlag == 0  ? mainData : searchArray
+         if(event.target.value == 'location'){
+             locationFlag=0;
+             return commomMapfunction(mapArrayLocation)
+         }
+         else{
+             locationFlag=1;
+             var nameObject=mapArrayLocation.filter((object) => {
+             return  object.location.includes(event.target.value)
+             })
+             console.log(nameObject);
+             searchArray=nameObject;
+             commomMapfunction(nameObject)
+         }
+         if (postFlag == 0 && locationFlag==0 && searchValue.length == 0) {
+    
+             document.getElementById("reset-button").disabled=true;
+             document.getElementById("reset-button").title='No Filters Applied'
+         } else {
+             document.getElementById("reset-button").disabled=false;
+             document.getElementById("reset-button").title='Clear All Filters'
+         }
+     }
 
 
 </script>
@@ -917,40 +574,27 @@
     <script src="https://www.youtube.com/iframe_api"></script>
 
     <script>
-    // document.addEventListener("DOMContentLoaded", function() {
-    //   var player;
+        // Get references to the input and select elements
+        var filterInput = document.getElementById("team-search");
+        var dropdown1 = document.getElementById("form-select-post");
+        var dropdown2 = document.getElementById("form-select-location");
 
-    //   function onYouTubeIframeAPIReady() {
-    //     player = new YT.Player("videoContainer", {
-    //       height: "100%",
-    //       width: "100%",
-    //       videoId: "znqUwx0b0HI", // Replace {VIDEO_ID} with the actual YouTube video ID
-    //       playerVars: {
-    //         autoplay: 1,
-    //         controls: 1,
-    //         modestbranding: 1,
-    //         rel: 0
-    //       },
-    //       events: {
-    //         onReady: onPlayerReady()
-    //       }
-    //     });
-    //   }
+        // Get a reference to the Clear Filter button
+        var clearFilterButton = document.getElementById("reset-button");
 
-    //   function onPlayerReady(event) {
-    //     document.getElementById("playButton").addEventListener("click", function() {
-    //       player.playVideo();
-    //       document.getElementById("playButton").style.display = "none";
-    //     });
-    //   }
-
-    //   // Load the YouTube Iframe API script
-    //   var tag = document.createElement("script");
-    //   tag.src = "https://www.youtube.com/iframe_api";
-    //   var firstScriptTag = document.getElementsByTagName("script")[0];
-    //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    // });
-  </script>
+        // Add a click event listener to the Clear Filter button
+        clearFilterButton.addEventListener("click", function () {
+            // Reset the input field
+            filterInput.value = "";
+            console.log('cliked');
+            // Reset the dropdown selections to their initial state (if it's the first option)
+            dropdown1.selectedIndex = 0;
+            dropdown2.selectedIndex = 0;
+            commomMapfunction(mainData);
+            clearFilterButton.disabled=true;
+            clearFilterButton.title='No Filters Applied';
+        });
+    </script>
 
 </body>
 
