@@ -223,7 +223,7 @@
 <div class="row mt-3">
 <div class="col-md-6 col-sm-12">
     <ul class="list-unstyled">
-        <a href="<?= base_url()?>assets/Strategy_Performance_Consulting_services" style="text-decoration: none;" class="text-dark">
+        <a href="<?= base_url()?>Strategy_Performance_Consulting_services" style="text-decoration: none;" class="text-dark">
             <li class="mb-1 serviceList">
                 <div class="align-items-center row">
                     <div class="col-3 pr-0 text-center w-75">

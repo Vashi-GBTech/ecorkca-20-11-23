@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['rkca-addPartner'] = 'welcome/rkca-addPartner';
+$route['rkca_addPartner'] = 'welcome/rkca_addPartner';
 $route['Business_Analyst'] = 'welcome/Business_Analyst';
 $route['Business_Analyst_copy'] = 'welcome/Business_Analyst_copy';
 $route['Business_Restructuing'] = 'welcome/Business_Restructuing';
