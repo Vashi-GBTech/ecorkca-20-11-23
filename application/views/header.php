@@ -9,11 +9,11 @@
 <!-- font-awesome cdn  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- bootstrap css cdn  -->
-<link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/bootstrap.css">
 
 <!-- custom css link  -->
-<link rel="stylesheet" href="<?= base_url()?>assets/css/style.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 
 <!-- jquery cdn  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -36,13 +36,16 @@
 <header >
 <div class="row mx-0" >
 <div class="align-items-center col-md-12 bg-danger contact-header d-flex justify-content-end px-4 py-1 small text-light">
-<a href="<?=base_url()?>welcome/NewsLetter" style="text-decoration: none; font-size:medium; font-weight: 500;" class="text-light"> <span><i class="fa-solid fa-newspaper"></i></span> NewsLetter</a>
+<a href="<?= base_url() ?>welcome/NewsLetter" style="text-decoration: none; font-size:medium; font-weight: 500;"
+    class="text-light"> <span><i class="fa-solid fa-newspaper"></i></span> NewsLetter</a>
 <a href="#" style="text-decoration: none; font-size:medium; font-weight: 500;" class="text-light ml-3"> <span><i class="fa-solid fa-envelope"></i></span> Info@ecovisrkca.com</a>
 </div>
 <div class="align-items-center col-md-12 d-flex justify-content-between main-header" id="myHeader">
 <div class="logo text-center" style="padding-bottom: 25px;">
-<a href="<?=base_url()?>welcome/index"><img src="<?=base_url()?>assets/ecovis-images/ecovis-logo.jpg" alt="" id="img1"></a>
-<a href="<?=base_url()?>welcome/index"><img src="<?=base_url()?>assets/ecovis-images/ecovis-india-logo-tagline.svg" alt=""  class="cssanimation fadeInBottom" style="display:none; align-items:end; height:80px;" id="img2"></a>
+<a href="<?= base_url() ?>welcome/index"><img src="<?= base_url() ?>assets/ecovis-images/ecovis-logo.jpg" alt=""
+        id="img1"></a>
+<a href="<?= base_url() ?>welcome/index"><img src="<?= base_url() ?>assets/ecovis-images/ecovis-india-logo-tagline.svg"
+        alt="" class="cssanimation fadeInBottom" style="display:none; align-items:end; height:80px;" id="img2"></a>
 </div>
 <div style="display:none;" class="w-50" id="searchbar_section">
 <div class="align-items-flex-start d-flex px-4 searchbar ">
@@ -55,10 +58,10 @@
 <a href="#">
     <li id="about_us" class="about_us">Who We Are</li>
 </a>
-<a href="<?= base_url()?>client_stories">
+<a href="<?= base_url() ?>client_stories">
     <li>Engagements</li>
 </a>
-<a href="<?= base_url()?>ourSolution">
+<a href="<?= base_url() ?>ourSolution">
     <li>Our Solution</li>
 </a>
 <a href="#">
@@ -79,7 +82,7 @@
             <a href="#"><button class="dropdown-item" type="button">Current
                     vacancies</button></a>
         </div> -->
-    <a href="<?= base_url()?>contact_us">
+    <a href="<?= base_url() ?>contact_us">
     <li>Let's Talk</li>
     </a>
 </div>
@@ -97,18 +100,19 @@
 <div class=" row position-absolute " style="display: none; z-index: 6; right: 0; left: 0;" id="aboutUs_menu">
 <div class="col-md-4 pr-0 text-center" style="background: linear-gradient(0deg, #CD1432, #dc4f54);">
 <div class="bg-light mt-5 mx-auto px-2 py-2 rounded-circle" style="width: 111px;">
-<img src="<?= base_url()?>assets/images/ecovis_logoes/Ecovis_rkca_logo_ball2.png" alt="" class="rounded-circle">
+<img src="<?= base_url() ?>assets/images/ecovis_logoes/Ecovis_rkca_logo_ball2.png" alt="" class="rounded-circle">
 </div>
 <h4 class="text-light  mt-3">Let’s Connect</h4>
 <p class="mx-auto text-justify text-light mt-5 w-75">RKCA is an organization excelled by its Competency Centers with more than 5 decades of presence in India, having a global footprint with associates in more than 90+ countries. Our Purpose is to mentor Entities of today to be MNC's for tomorrow.</p>
-<a href="<?= base_url()?>contact_us"><button class="btn header_connectBTN mb-4 font-weight-bold text-light">CONTACT US</button></a>
+<a href="<?= base_url() ?>contact_us"><button class="btn header_connectBTN mb-4 font-weight-bold text-light">CONTACT
+        US</button></a>
 </div>
 <div class="col-md-4 ourPresents pt-4">
 <h3 class="font-weight-normal d-inline ml-4 mt-3" style="margin-top:70px">Our Presence </h3>
 <ul class="list-unstyled">
 <li class="justify-content-between mb-3 mt-4">
     <div class="align-items-center row">
-        <a href="<?= base_url()?>ecovis_india" class="d-flex justify-content-between text-dark w-100"
+        <a href="<?= base_url() ?>ecovis_india" class="d-flex justify-content-between text-dark w-100"
             style=" text-decoration: none;">
             <div class="col-3 pr-0 text-center w-75">
                 <i class="fa-solid fa-location-pin text-danger" style="font-size: 2.5rem; "></i>
@@ -137,7 +141,7 @@
 </li> -->
 <li class="justify-content-between mb-1">
     <div class="align-items-center row">
-        <a href="<?= base_url()?>ecovis_International" class="d-flex justify-content-between text-dark w-100"
+        <a href="<?= base_url() ?>ecovis_International" class="d-flex justify-content-between text-dark w-100"
             style=" text-decoration: none;">
 
             <div class="col-3 pr-0 text-center w-75">
@@ -159,7 +163,7 @@
 <li class="mt-4">
 <div class="align-items-center mb-2 row">
     <div class="col-3 pr-0 text-center w-75">
-        <img src="<?= base_url()?>assets/ecovis_icons/r_in.png" class="" style="width: 84%;">
+        <img src="<?= base_url() ?>assets/ecovis_icons/r_in.png" class="" style="width: 84%;">
     </div>
     <div class="col-9 pl-0">
         <h4 class="mb-0 font-weight-normal" style="color:#4b4d4f !important"><span style="color: #CD1432;">R</span>esponsibility</h4>
@@ -170,7 +174,7 @@
 <li class="">
 <div class="align-items-center mb-2 row">
     <div class="col-3 pr-0 text-center w-75">
-        <img src="<?= base_url()?>assets/ecovis_icons/k_in.png" class="" alt="" style="width: 88%;">
+        <img src="<?= base_url() ?>assets/ecovis_icons/k_in.png" class="" alt="" style="width: 88%;">
     </div>
     <div class="col-9 pl-0">
         <h4 class="mb-0 font-weight-normal" style="color:#4b4d4f !important"><span style="color: #CD1432;">K</span>nowledge</h4>
@@ -181,7 +185,7 @@
 <li class="">
 <div class="align-items-center mb-2 row">
     <div class="col-3 pr-0 text-center w-75">
-        <img src="<?= base_url()?>assets/ecovis_icons/c_in.png" style="width: 60%;" alt="">
+        <img src="<?= base_url() ?>assets/ecovis_icons/c_in.png" style="width: 60%;" alt="">
     </div>
     <div class="col-9 pl-0">
         <h4 class="mb-0 font-weight-normal" style="color:#4b4d4f !important"><span style="color: #CD1432;">C</span>ommitment</h4>
@@ -192,7 +196,7 @@
 <li class="">
 <div class="align-items-center mb-2 row">
     <div class="col-3 pr-0 text-center w-75">
-        <img src="<?= base_url()?>assets/ecovis_icons/a_in.png" class="" alt="" style="width: 84%;">
+        <img src="<?= base_url() ?>assets/ecovis_icons/a_in.png" class="" alt="" style="width: 84%;">
     </div>
     <div class="col-9 pl-0">
         <h4 class="mb-0 font-weight-normal" style="color:#4b4d4f !important"><span style="color: #CD1432;">A</span>ccountability</h4>
@@ -209,87 +213,96 @@
 <div class="mx-0 row  position-absolute " style="display: none; z-index: 6;" id="services_menu">
 <div class="col-md-4 text-center" style="background: linear-gradient(0deg, #CD1432, #dc4f54);">
 <div class="mt-5 mx-auto px-2 py-2 rounded-circle" style="width: 210px;">
-<img src="<?= base_url()?>assets/images/ecovis_logoes/Mentor_bi.png" alt="" class="rounded-circle w-100">
+<img src="<?= base_url() ?>assets/images/ecovis_logoes/Mentor_bi.png" alt="" class="rounded-circle w-100">
 </div>
 <h4 class="text-light  mt-3">Let’s Connect</h4>
-<P class="mx-auto text-justify text-light w-75">RKCA is an organization excelled by its Competency Centers with more than 5 decades of presence in India, having a global footprint with associates in more than 90+ countries. Our Purpose is to mentor Entities of today to be MNC’s for tomorrow.
-</P>
-<button class="btn header_connectBTN font-weight-bold text-light">CONTACT US</button>
-</div>
+        <P class="mx-auto text-justify text-light w-75">RKCA is an organization excelled by its Competency Centers with
+            more than 5 decades of presence in India, having a global footprint with associates in more than 90+
+            countries. Our Purpose is to mentor Entities of today to be MNC’s for tomorrow.
+        </P>
+        <button class="btn header_connectBTN font-weight-bold text-light">CONTACT US</button>
+    </div>
 
 <div class="col-md-8 ourValues d-flex">
 <div class="w-100 my-4">
 <h3 class="font-weight-normal d-inline ml-4"> Centre of Excellence -COE </h3>
 <div class="row mt-3">
-<div class="col-md-6 col-sm-12">
+ <div class="col-md-6 col-sm-12">
     <ul class="list-unstyled">
-        <a href="<?= base_url()?>Strategy_Performance_Consulting_services" style="text-decoration: none;" class="text-dark">
+        <a href="<?= base_url() ?>Strategy_Performance_Consulting_services" style="text-decoration: none;" class="text-dark">
             <li class="mb-1 serviceList">
                 <div class="align-items-center row">
                     <div class="col-3 pr-0 text-center w-75">
-                    <div id="myCarousel1" class="carousel slide" data-interval="false">
-                        <div class="carousel-inner">
-                        <ol id="carousel-indicators" class="carousel-indicators" style='top:37px'>
-                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel1" data-slide-to="1"></li>
-                        </ol>
-                            <div class="carousel-item active dimentions">
-                            <img class="carausel-logo-img" src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Strategy and performance consulting/Icon for strategy and performance consulting.png" style="width: 61%;" alt="First slide">
-                            </div>
-                            <div class="carousel-item dimentions-logo">
-                            <div class="dmt" >
-                                <img src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Strategy and performance consulting/Core Creators - Logo (strategy and performance consulting).png" style="width: 67%;" alt="Second slide">
-                            </div>
-                            </div>
-                        </div>
-                        </div>
+                        <div id="myCarousel1" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <ol id="carousel-indicators" class="carousel-indicators" style='top:37px'>
+                                    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-item active dimentions">
+                                                <img class="carausel-logo-img"
+                                                    src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Strategy and performance consulting/Icon for strategy and performance consulting.png"
+                                                    style="width: 61%;" alt="First slide">
+                                                </div>
+                                                <div class="carousel-item dimentions-logo">
+                                                <div class="dmt">
+                                                    <img src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Strategy and performance consulting/Core Creators - Logo (strategy and performance consulting).png"
+                                                        style="width: 67%;" alt="Second slide">
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
 
-                    </div>
-                    <div class="col-9 pl-0">
-                        <h5 class="mb-1 serviceName">Strategy and Performance Consulting</h5>
-                        <p class="mb-0 small">Goal-oriented service focuses on the gaps between business and performance outcomes</p>
-                    </div>
-                </div>
-            </li>
-        </a>
-    </ul>
-</div>
-<div class="col-md-6 col-sm-12">
-    <ul class="list-unstyled">
-        <a href="<?= base_url()?>LitigationLegalServices" style="text-decoration: none;" class="text-dark">
-            <li class="mb-1 serviceList">
-                <div class="align-items-center row">
-                    <div class="col-3 pr-0 text-center w-75  ">
-                    <div id="myCarousel2" class="carousel slide" data-interval="false">
-                    <ol class="carousel-indicators" style='top:37px'>
-                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel2" data-slide-to="1"></li>  
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active dimentions">
-                        <img class="carausel-logo-img"  src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Litigation, GRC, Transaction Advisory/Icon for Litigation, GRC Transaction Advisory.png"  style="width: 67%;" alt="First slide">
-                        </div>  
-                        <div class="carousel-item dimentions-logo" >
-                        <img src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Litigation, GRC, Transaction Advisory/RKCA - Logo (Litigation, GRC, Transaction Advisory).png" style="width: 67%;" alt="Second slide">
-                        </div>
-                        
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col-9 pl-0">
-                        <h5 class="mb-1 serviceName">Litigation, GRC Transaction Advisory</h5>
-                        <p class="mb-0 small">Aiding you with legal advises and policies</p>
-                    </div>
-                </div>
-            </li>
-        </a>
-    </ul>
-</div>
-</div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <h5 class="mb-1 serviceName">Strategy and Performance Consulting</h5>
+                                    <p class="mb-0 small">Goal-oriented service focuses on the gaps between business and
+                                        performance outcomes</p>
+                                </div>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <ul class="list-unstyled">
+                    <a href="<?= base_url() ?>LitigationLegalServices" style="text-decoration: none;" class="text-dark">
+                        <li class="mb-1 serviceList">
+                            <div class="align-items-center row">
+                                <div class="col-3 pr-0 text-center w-75  ">
+                                    <div id="myCarousel2" class="carousel slide" data-interval="false">
+                                        <ol class="carousel-indicators" style='top:37px'>
+                                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active dimentions">
+                                                <img class="carausel-logo-img"
+                                                    src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Litigation, GRC, Transaction Advisory/Icon for Litigation, GRC Transaction Advisory.png"
+                                                    style="width: 67%;" alt="First slide">
+                                                </div>
+                                            <div class="carousel-item dimentions-logo">
+                                                <img src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Litigation, GRC, Transaction Advisory/RKCA - Logo (Litigation, GRC, Transaction Advisory).png"
+                                                    style="width: 67%;" alt="Second slide">
+                                            </div>
+                                            
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-9 pl-0">
+                                                <h5 class="mb-1 serviceName">Litigation, GRC Transaction Advisory</h5>
+                                                <p class="mb-0 small">Aiding you with legal advises and policies</p>
+                                            </div>
+                                            </div>
+                                            </li>
+                                            </a>
+                                            </ul>
+                                            </div>
+                                            </div>
 <div class="row mt-3">
 <!-- <div class="col-md-6 col-sm-12">
     <ul class="list-unstyled mb-0">
-        <a href="<?= base_url()?>Onshore_Offshore_Advisory" style="text-decoration: none;" class="text-dark">
+        <a href="<?= base_url() ?>Onshore_Offshore_Advisory" style="text-decoration: none;" class="text-dark">
             <li class="mb-1 serviceList">
                 <div class="align-items-center row">
                     <div class="col-3 pr-0 text-center w-75  menu_services_logo  ">
@@ -300,10 +313,12 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active dimentions">
-                        <img class="carausel-logo-img" src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Onshore and Offshore/Icon for onshore and offshore.png" style="width: 67%;" alt="First slide">
+                        <img class="carausel-logo-img" src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Onshore and Offshore/Icon for onshore and offshore.png"
+                            style="width: 67%;" alt="First slide">
                         </div>  
                         <div class="carousel-item dimentions-logo" >
-                        <img  src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Onshore and Offshore/RKCO Logo.png"  style="width: 67%;" alt="Second slide">
+                        <img  src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Onshore and Offshore/RKCO Logo.png"
+                            style="width: 67%;" alt="Second slide">
                         </div>
                         
                     </div>
@@ -321,7 +336,7 @@
 </div> -->
 <div class="col-md-6 col-sm-12">
     <ul class="list-unstyled mb-0">
-        <a href="<?= base_url()?>Financial_and_Capital_Services" style="text-decoration: none;" class="text-dark">
+        <a href="<?= base_url() ?>Financial_and_Capital_Services" style="text-decoration: none;" class="text-dark">
             <li class="mb-1 serviceList">
                 <div class="align-items-center row">
                     <div class="col-3 pr-0 text-center w-75  menu_services_logo ">
@@ -332,10 +347,12 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active dimentions">
-                        <img class="carausel-logo-img" src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Financial & Capital services/Icon for Financial & Capital Services.png" style="width: 67%;" alt="First slide">
+                        <img class="carausel-logo-img" src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Financial & Capital services/Icon for Financial & Capital Services.png"
+                            style="width: 67%;" alt="First slide">
                         </div>  
                         <div class="carousel-item dimentions-logo" >
-                        <img src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Financial & Capital services/MARGom Logo (Financial & Capital Services).png"  style="width: 100%;height: inherit;" alt="Second slide">
+                        <img src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Financial & Capital services/MARGom Logo (Financial & Capital Services).png"
+                            style="width: 100%;height: inherit;" alt="Second slide">
                         </div>
                         
                     </div>
@@ -346,6 +363,40 @@
                     <div class="col-9 pl-0">
                         <h5 class="mb-1 serviceName">Financial & Capital Services</h5>
                         <p class="mb-0 small">Offering services to make your business financially sound</p>
+                    </div>
+                </div>
+            </li>
+        </a>
+    </ul>
+</div>
+<div class="col-md-6 col-sm-12">
+    <ul class="list-unstyled mb-0">
+        <a href="<?= base_url() ?>Digital_transformation" style="text-decoration: none;" class="text-dark">
+            <li class="mb-1 serviceList">
+                <div class="align-items-center row">
+                    <div class="col-3 pr-0 text-center w-75 ">
+                    <div id="myCarousel5" class="carousel slide" data-interval="false">
+                    <ol class="carousel-indicators" style='top:37px'>
+                        <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel5" data-slide-to="1"></li>  
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active dimentions">
+                        <img class="carausel-logo-img"  src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Digital Transformation/Icon for Digital Transformations.png"
+                            style="width: 67%;" alt="First slide">
+                        </div>  
+                        <div class="carousel-item dimentions-logo" >
+                        <img  src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Digital Transformation/GBT Logo (Digital Transformations).png"
+                            style="width: 67%;" alt="Second slide">
+                      
+                        </div>
+                        
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-9 pl-0">
+                        <h5 class="mb-1 serviceName">Digital Transformations</h5>
+                        <p class="mb-0 small">Transform and foster your business with our tech experts and Data analytics team</p>
                     </div>
                 </div>
             </li>
@@ -369,43 +420,12 @@
         </a>
     </ul>
 </div> -->
-<div class="col-md-6 col-sm-12">
-    <ul class="list-unstyled mb-0">
-        <a href="<?= base_url()?>Digital_transformation" style="text-decoration: none;" class="text-dark">
-            <li class="mb-1 serviceList">
-                <div class="align-items-center row">
-                    <div class="col-3 pr-0 text-center w-75 ">
-                    <div id="myCarousel5" class="carousel slide" data-interval="false">
-                    <ol class="carousel-indicators" style='top:37px'>
-                        <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel5" data-slide-to="1"></li>  
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active dimentions">
-                        <img class="carausel-logo-img"  src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Digital Transformation/Icon for Digital Transformations.png"  style="width: 67%;" alt="First slide" >
-                        </div>  
-                        <div class="carousel-item dimentions-logo" >
-                        <img  src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Digital Transformation/GBT Logo (Digital Transformations).png"  style="width: 67%;" alt="Second slide">
-                      
-                        </div>
-                        
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col-9 pl-0">
-                        <h5 class="mb-1 serviceName">Digital Transformations</h5>
-                        <p class="mb-0 small">Transform and foster your business with our tech experts and Data analytics team</p>
-                    </div>
-                </div>
-            </li>
-        </a>
-    </ul>
-</div>
+
 </div>
 <div class="row mt-3">
 <div class="col-md-6 col-sm-12">
     <ul class="list-unstyled mb-0">
-        <a href="<?= base_url()?>BusinessSupportandFinancialReporting" style="text-decoration: none;" class="text-dark">
+        <a href="<?= base_url() ?>BusinessSupportandFinancialReporting" style="text-decoration: none;" class="text-dark">
             <li class="mb-1 serviceList">
                 <div class="align-items-center row">
                     <div class="col-3 pr-0 text-center w-75  ">
@@ -416,10 +436,12 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active dimentions">
-                        <img class="carausel-logo-img" src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Business support and financial reporting/Icon for business support and financial reporting (2).png"  style="width: 61%;" alt="First slide">
+                        <img class="carausel-logo-img" src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Business support and financial reporting/Icon for business support and financial reporting (2).png"
+                            style="width: 61%;" alt="First slide">
                         </div>  
                         <div class="carousel-item dimentions-logo" >
-                        <img  src="<?= base_url()?>assets/images/Logos and Icons for Ecovis website/Business support and financial reporting/PCG RKCA (Business support & Financial reporting).png" style="width: 67%;" alt="Second slide">
+                        <img  src="<?= base_url() ?>assets/images/Logos and Icons for Ecovis website/Business support and financial reporting/PCG RKCA (Business support & Financial reporting).png"
+                            style="width: 67%;" alt="Second slide">
                         </div>
                         
                     </div>
@@ -594,88 +616,88 @@ $(document).ready(function() {
   });
 
 
-$("#about_us").click(function() {
-$("#aboutUs_menu").slideToggle();
-$("#services_menu").slideUp();
-// $("#menu").slideUp();
-});
-$("#services").click(function() {
-$("#services_menu").slideToggle();
-$("#aboutUs_menu").slideUp();
-// $("#menu").slideUp();
+            $("#about_us").click(function() {
+            $("#aboutUs_menu").slideToggle();
+            $("#services_menu").slideUp();
+            // $("#menu").slideUp();
+            });
+            $("#services").click(function() {
+            $("#services_menu").slideToggle();
+            $("#aboutUs_menu").slideUp();
+            // $("#menu").slideUp();
 
-});
-$("#menu_icon").click(function() {
-$("#menu").slideToggle();
-// $("#aboutUs_menu").slideUp();
-// $("#services_menu").slideUp();
-
-
-
-});
-
-
-// toggleSearch 
-$("#toggleSearch").click(function() {
-$("#menu").slideToggle(function() {
-$("#searchbar_section").slideToggle();
-// $("#searchbar_section").css({"visibility":"visible"});
-});
+            });
+            $("#menu_icon").click(function() {
+            $("#menu").slideToggle();
+            // $("#aboutUs_menu").slideUp();
+            // $("#services_menu").slideUp();
 
 
 
-});
-$("#closeSearchBar").click(function() {
-$("#searchbar_section").slideToggle(function() {
-// $("#searchbar_section").css({"visibility":"hidden"});
-$("#menu").slideToggle();
+            });
 
-});
-});
 
-// $(document).mouseup(function(e) {
-//     if ($(e.target).closest("#menu").length === 0 && $(e.target).closest("#menu_icon").length === 0) {
-//         $("#menu").slideUp();
-//     }
-// });
-$(document).mouseup(function(e) {
-if ($(e.target).closest("#aboutUs_menu").length === 0 && $(e.target).closest("#about_us").length === 0 && $(e.target).closest("header").length === 0) {
-$("#aboutUs_menu").slideUp();
-}
-});
-$(document).mouseup(function(e) {
-if ($(e.target).closest("#services_menu").length === 0 && $(e.target).closest("#services").length === 0) {
-$("#services_menu").slideUp();
-}
-});
-let prevScrollPos = window.pageYOffset;
-window.onscroll = function () {
-let currentScrollPos = window.pageYOffset;
-if (prevScrollPos > currentScrollPos) {
-// Scrolling up
+            // toggleSearch 
+            $("#toggleSearch").click(function() {
+            $("#menu").slideToggle(function() {
+            $("#searchbar_section").slideToggle();
+            // $("#searchbar_section").css({"visibility":"visible"});
+            });
 
-$("#img1").show();
-$("#img2").hide();
-} else {
-// Scrolling down
 
-$("#img1").hide();
-$("#img2").show();
 
-}
-prevScrollPos = currentScrollPos;
-}
+            });
+            $("#closeSearchBar").click(function() {
+            $("#searchbar_section").slideToggle(function() {
+            // $("#searchbar_section").css({"visibility":"hidden"});
+            $("#menu").slideToggle();
 
-window.addEventListener('scroll', function() {
-var header = document.getElementById('myHeader');
-var offset = window.pageYOffset;
+            });
+            });
 
-if (offset > 0) {
-header.classList.add('sticky');
-} else {
-header.classList.remove('sticky');
-}
-});
+            // $(document).mouseup(function(e) {
+            //     if ($(e.target).closest("#menu").length === 0 && $(e.target).closest("#menu_icon").length === 0) {
+            //         $("#menu").slideUp();
+            //     }
+            // });
+            $(document).mouseup(function(e) {
+            if ($(e.target).closest("#aboutUs_menu").length === 0 && $(e.target).closest("#about_us").length === 0 && $(e.target).closest("header").length === 0) {
+            $("#aboutUs_menu").slideUp();
+            }
+            });
+            $(document).mouseup(function(e) {
+            if ($(e.target).closest("#services_menu").length === 0 && $(e.target).closest("#services").length === 0) {
+            $("#services_menu").slideUp();
+            }
+            });
+            let prevScrollPos = window.pageYOffset;
+            window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+            // Scrolling up
+
+            $("#img1").show();
+            $("#img2").hide();
+            } else {
+            // Scrolling down
+
+            $("#img1").hide();
+            $("#img2").show();
+
+            }
+            prevScrollPos = currentScrollPos;
+            }
+
+            window.addEventListener('scroll', function() {
+            var header = document.getElementById('myHeader');
+            var offset = window.pageYOffset;
+
+            if (offset > 0) {
+            header.classList.add('sticky');
+            } else {
+            header.classList.remove('sticky');
+            }
+            });
 
 </script>
 </body>

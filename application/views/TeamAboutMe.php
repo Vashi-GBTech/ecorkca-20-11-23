@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECOVISRKCA - Mentor Bi</title>
-    <link rel="icon" href="<?= base_url()?>assets/images/ecovis_logoes/Ecovis_rkca_logo_ball.png" type="image/icon type">
+    <link rel="icon" href="<?=base_url()?>assets/images/ecovis_logoes/Ecovis_rkca_logo_ball.png" type="image/icon type">
  <!-- bootstrap css cdn  -->
-    <link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/bootstrap.css">
 
        <!-- bootstrap javascript cdn  -->
 
@@ -45,19 +45,19 @@
        
         <div class=' w-100 d-flex justify-content-center py-2' >
         <div>
-           <p class='mb-0' style='color:#cd1432!important;font-size:20px;font-family:cursive'>Specialist Areas</p>
-           <ul id="specialist-list" style="padding-left: 20px; margin-bottom: 0px;list-style: initial !important;">
+           <p class='mb-0' style='color:#cd1432!important;font-size:20px;font-family:cursive;text-align:center'>Specialist & Qualification Areas</p>
+           <ul id="specialist-list" style="padding-left: 20px; margin-bottom: 0px;list-style: initial !important;text-align:center;">
              <li>list</li>
            </ul>
-   </div>
+       </div>
          </div>
          <div class='w-100 justify-content-center d-flex py-2' >
-         <div>
+         <!-- <div>
            <p class='mb-0' style='color:#cd1432!important;font-size:20px;font-family:cursive'>Qualifications</p>
            <ul style="padding-left: 20px; margin-bottom: 0px;list-style: initial !important;" id="qualification-list">
             <li>ACCA</li>
            </ul>
-           </div>
+           </div> -->
          </div>
         </div>
         <div class="col-md-7 px-4" >
@@ -67,9 +67,9 @@
             <p id="about-me"></p>
 
              <div class='d-flex w-100 justify-content-left py-2' > 
-            <div>
+            <!-- <div>
            <button href="#"  type="button" class="btn btn-outline-danger"  varient='outlined' style="padding: 5px 49px !important;color: #cd1432 !important;border-color:#cd1432 !important">Connect on LinkedIn</button>
-            </div> 
+            </div>  -->
           </div> 
         </div>
         <div class="col-md-1">
@@ -79,108 +79,9 @@
 
 </div>
 </body>
+<script>  var baseUrl = "<?= base_url() ?>";</script>
 <script>
-const aboutMembersDatas=[
-  { key:'Pankaj_Bhargava',
-    img: '<?= base_url()?>assets/ourTeam_B&W/01_Pankaj_Bhargava.jpg', 
-    Name: "Pankaj Bhargava",
-    emailId: 'Pankaj_Bhargava@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Strategy & Performance Consulting',
-  },
-  { key:'Sanjeev_Bindal',
-    img: '<?= base_url()?>assets/ourTeam_B&W/06_Sanjeev_Bindal.jpg', 
-    Name: "Sanjeev Bindal",
-    emailId: 'Pankaj_Bhargava@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Litigation & Legal Services',
-  },
-  { key:'Dheeraj_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/02_Dheeraj_rathi.jpg', 
-    Name: "Dheeraj Rathi",
-    emailId: 'Dheeraj_Rathi@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Cross border & Merchant Banking Advice',
-  },
-  { key:'Shruti_Ambegaonkar',
-    img: '<?= base_url()?>assets/ourTeam_B&W/22_shruti.jpg', 
-    Name: "Shruti Ambegaonkar",
-    emailId: 'Shruti_Ambegaonkar@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Strategy and Performance Consulting',
-  },
-  { key:'Deepa_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/21_Deepa_rathi.png', 
-    Name: "Deepa Rathi",
-    emailId: 'Deepa_Rathi@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post :'On shore and Off shore Advisory'
-  },
-  { key:'Pankaj_Monga',
-    img: '<?= base_url()?>assets/ourTeam_B&W/23_pankaj_monga.jpeg', 
-    Name: "Pankaj Monga",
-    emailId: 'Pankaj_Monga@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Legal, Risk and IPR Practice'
-  },
-  { key:'Manish_Adukia',
-    img: '<?= base_url()?>assets/ourTeam_B&W/05_Manish_Adukia.jpg', 
-    Name: "Manish Adukia",
-    emailId: 'Manish_Adukia@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Business support & Financial Reporting',
-  },
-  { key:'Litigation',
-    img: '', 
-    Name: "Litigation",
-    emailId: 'Litigation@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Litigation,GRC Transaction Advisory',
-  },
-  { key:'Parag_Shah',
-    img: '<?= base_url()?>assets/ourTeam_B&W/09_Parag_Shah.jpg', 
-    Name: "Parag shah",
-    emailId: 'Parag_shah@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Financial & Capital Services'
-  },
-  { key:'Bharat_Mishra',
-    img: '<?= base_url()?>assets/ourTeam_B&W/03_Bharat_Mishra.jpg', 
-    Name: "Bharat Mishtra",
-    emailId: 'Bharat_Mishtra@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Digital Transformation',
-  },
-  { key:'D._Bala',
-    img: '<?= base_url()?>assets/ourTeam_B&W/10_Bala.png', 
-    Name: "D. Bala",
-    emailId: 'D_Bala@ecovis.co.uk' ,
-    specialist:['Corporate Tax','International Tax','VAT'],
-    qualification:['ACCA','PH.D'],
-    linkedIn:'#',
-    post:'Cross Border & Merchant Banking Advice'
-  },
-];
+
 let Members =[
    { key:'Rameshwarlal_Badrilalji_Kabra',
     img: '', 
@@ -201,7 +102,7 @@ let Members =[
     ]
    },
    { key:'Asit_Pal',
-    img: '<?= base_url()?>assets/OurTeam/asit_pal.png', 
+    img: './OurTeam/asit_pal.png', 
     Name: "Asit Pal",
     emailId: 'asit@rkca.net' ,
     specialist:[],
@@ -213,7 +114,7 @@ let Members =[
     about: []
    },
   { key:'M_D_Kabra',
-    img: '<?= base_url()?>assets/OurTeam/MDKabra.png', 
+    img: './OurTeam/MDKabra.png', 
     Name: "M. D. Kabra",
     emailId: 'md.kabra@ecovis.co.uk' ,
     specialist:[],
@@ -225,7 +126,7 @@ let Members =[
     about:[]
   },
   {  key:'S_C_Kabra',
-    img: '<?= base_url()?>assets/OurTeam/SCKabra.png', 
+    img: './OurTeam/SCKabra.png', 
     Name: "S. C. Kabra",
     emailId: 'sc.kabra@ecovisrkca.com' ,
     specialist:[],
@@ -237,7 +138,7 @@ let Members =[
     about:[]
   },
   { key:'R_S_Kela',
-    img: '<?= base_url()?>assets/OurTeam/r.s.kela.png', 
+    img: './OurTeam/r.s.kela.png', 
     Name: "R. S. Kela",
     emailId: 'rs.kela@ecovisrkca.com' ,
     specialist:['Tax Planning', 'Transfer Pricing',' Tax Litigation'],
@@ -255,7 +156,7 @@ let Members =[
     ]
   },
   {  key:'Dheeraj_Rathi',
-    img: '<?= base_url()?>assets/OurTeam/02_Dheeraj_rathi.jpg', 
+    img: './OurTeam/02_Dheeraj_rathi.jpg', 
     Name: "Dheeraj Rathi",
     emailId: 'drathi@ecovisrkca.com' ,
 
@@ -280,7 +181,7 @@ let Members =[
     ]
   },
   { key:'Pankaj_Bhargava',
-    img: '<?= base_url()?>assets/OurTeam/01_Pankaj_Bhargava.jpg', 
+    img: './OurTeam/01_Pankaj_Bhargava.jpg', 
     Name: "Pankaj Bhargava",
     emailId: 'Pankaj_Bhargava@ecovis.co.uk' ,
     specialist:['Human Resources Management Facilitation','Business Growth',
@@ -299,7 +200,7 @@ let Members =[
     ]
   },
   { key:'Sanjeev_Bindal',
-    img: '<?= base_url()?>assets/OurTeam/06_Sanjeev_Bindal.jpg', 
+    img: './OurTeam/06_Sanjeev_Bindal.jpg', 
     Name: "Sanjeev Bindal",
     emailId: 'sanjeev.bindal@rkca.net' ,
 
@@ -322,7 +223,7 @@ let Members =[
     ]
   },
   { key:'Deepa_Rathi',
-    img: '<?= base_url()?>assets/ourTeam_B&W/21_Deepa_rathi.png', 
+    img: './ourTeam/deepa-rathi.jpg', 
     Name: "Deepa Rathi",
     emailId: 'deepa@rkabra.net' ,
     specialist:['Information System Audit','Public Relations','Resolution Professional'],
@@ -342,7 +243,7 @@ let Members =[
     ]
   },
   { key:'Shruti_Ambegaonkar',
-    img: '<?= base_url()?>assets/ourTeam_B&W/22_shruti.jpg', 
+    img: './ourTeam/shruti-ambegaonkar.jpg', 
     Name: "Shruti Ambegaonkar",
     emailId: 'Shruti_Ambegaonkar@ecovisrkca.in' ,
     specialist:[],
@@ -354,7 +255,7 @@ let Members =[
     about:[]
   },
   { key:'Manish_Adukia',
-    img: '<?= base_url()?>assets/OurTeam/05_Manish_Adukia.jpg', 
+    img: './OurTeam/05_Manish_Adukia.jpg', 
     Name: "Manish Adukia",
     emailId: 'manish.a@ecovisrkca.com' ,
     specialist:['Business Valuation', 'Forensic Accounting', 'Strategic Financial Planning','Treasury Management', 'Capital Budgeting'],
@@ -372,7 +273,7 @@ let Members =[
     ]
   },
   { key:'Parag_Shah',
-    img: '<?= base_url()?>assets/OurTeam/09_Parag_Shah.jpg', 
+    img: './OurTeam/09_Parag_Shah.jpg', 
     Name: "Parag shah",
     emailId: 'Parag_shah@ecovis.co.uk' ,
     specialist:['Investment Analysis', 'Financial Forecasting Fraud Detection', 'Litigation Support Capital Budgeting','Financial Risk Management'],
@@ -391,7 +292,7 @@ let Members =[
     ]
   },
   { key:'Bharat_Mishra',
-    img: '<?= base_url()?>assets/OurTeam/03_Bharat_Mishra.jpg', 
+    img: './OurTeam/03_Bharat_Mishra.jpg', 
     Name: "Bharat Mishtra",
     emailId: 'bharat@gbtech.in' ,
     specialist:['Corporate Tax','International Tax','VAT'],
@@ -403,7 +304,7 @@ let Members =[
     about:[]
   },
   { key:'D_Balasubramaniam',
-    img: '<?= base_url()?>assets/OurTeam/10_D._Bala.JPG', 
+    img: './OurTeam/10_D._Bala.JPG', 
     Name: "D. Balasubramaniam",
     emailId: 'd.bala@ecovisrkca.com' ,
     specialist:['Corporate Tax','International Tax','VAT'],
@@ -415,7 +316,7 @@ let Members =[
     about:[]
   },
   { key:'Siddharth_Baghmar',
-    img: '<?= base_url()?>assets/OurTeam/13_Siddharth_Baghmar.jpg', 
+    img: './OurTeam/13_Siddharth_Baghmar.jpg', 
     Name: "Siddharth Baghmar",
     emailId: 'D_Bala@ecovis.co.uk' ,
     specialist:['Financial and Banking Service','Direct Taxation',' Indirect Taxation', 'Statutory & Internal Audits & GST.'],
@@ -427,7 +328,7 @@ let Members =[
     about:[]
   },
   { key:'Sanjay_Surana',
-    img: '<?= base_url()?>assets/OurTeam/07_Sanjay_Surana.jpg', 
+    img: './OurTeam/07_Sanjay_Surana.jpg', 
     Name: "Sanjay Surana",
     emailId: 'D_Bala@ecovis.co.uk' ,
     specialist:['Tax Planning','Transfer Pricing','GST Consulting','International Taxation'],
@@ -445,7 +346,7 @@ let Members =[
     ]
   },
   { key:'Rajendra_Kothari',
-    img: '<?= base_url()?>assets/ourTeam_B&W/10_Bala.png', 
+    img: './ourTeam_B&W/10_Bala.png', 
     Name: "Rajendra_Kothari",
     emailId: 'r.kothari@ecovisrkca.com' ,
     specialist:['Financial and Banking Service','Direct Taxation',' Indirect Taxation', 'Statutory & Internal Audits & GST.'],
@@ -457,7 +358,7 @@ let Members =[
     about:[]
   },
   { key:'Ram_Verma',
-    img: '<?= base_url()?>assets/OurTeam/08_Ram_Verma.jpg', 
+    img: './OurTeam/08_Ram_Verma.jpg', 
     Name: "Ram Verma",
     emailId: 'r.verma@ecovisrkca.com' ,
     specialist:['Statutory audits', 'internal audits','bank audits  & accounts across the industry sectors.'],
@@ -469,7 +370,7 @@ let Members =[
     about:[]
   },
   { key:'Manju_Latha_Boob',
-    img: '<?= base_url()?>assets/OurTeam/12_Manju_Latha_Boob.jpg', 
+    img: './OurTeam/12_Manju_Latha_Boob.jpg', 
     Name: "Manju Latha Boob",
     emailId: 'manju@ecovisrkca.com' ,
     specialist:['Taxation','Auditing','Financial Consulting'],
@@ -490,7 +391,7 @@ let Members =[
     ]
   },
   { key:'Pradip_Das',
-    img: '<?= base_url()?>assets/OurTeam/pradip-das.png', 
+    img: './OurTeam/pradip-das.png', 
     Name: "Pradip Das",
     emailId: 'pradip@ecovisrkca.com',
     specialist:['Financial and Banking Service'],
@@ -502,7 +403,7 @@ let Members =[
     about:[]
   },
   { key:'Jaigovind_Boob',
-    img: '<?= base_url()?>assets/OurTeam/14_Jaigovind_boob.jpg', 
+    img: './OurTeam/14_Jaigovind_boob.jpg', 
     Name: "Jaigovind Boob",
     emailId: 'jaigovind@ecovisrkca.com' ,
     specialist:['Risk Management Consulting','Forensic Accounting','Corporate Governance', 'Process Optimization'],
@@ -522,7 +423,7 @@ let Members =[
     ]
   },
   { key:'Rahul_Nagar',
-    img: '<?= base_url()?>assets/OurTeam/11_Rahul_Nagar.jpg', 
+    img: './OurTeam/11_Rahul_Nagar.jpg', 
     Name: "Rahul Nagar",
     emailId: 'jaigovind@ecovisrkca.com' ,
     specialist:['Assurance Services','Transaction Advisory','Internal Audits'],
@@ -534,7 +435,7 @@ let Members =[
     about:[]
   },
   { key:'Pankaj_Monga',
-    img: '<?= base_url()?>assets/ourTeam_B&W/23_pankaj_monga.jpeg', 
+    img: './ourTeam/pankaj_monga.jpeg', 
     Name: "Pankaj Monga",
     emailId: 'Pankaj_Monga@ecovis.co.uk' ,
     specialist:['Anti-Counterfeiting','Anti-Diversion','Product Tampering','IP Strategy'],
@@ -546,7 +447,7 @@ let Members =[
     about:[]
   },
   { key:'K_C_Gupta',
-    img: '<?= base_url()?>assets/OurTeam/kc_gupta.png', 
+    img: './OurTeam/kc_gupta.png', 
     Name: "K. C. Gupta",
     emailId: 'Pankaj_Monga@ecovis.co.uk' ,
     specialist:['Taxation'],
@@ -557,7 +458,18 @@ let Members =[
     location:'Shastri Nagar, New Delhi',
     about:[]
   },
-]
+];
+
+
+let mainData=[];
+
+function onLoadPage(){
+
+   
+
+
+   
+}
 let loremIpsum=[
   "Hello, I’m Kate. As an Audit and Advisory Partner, I love working in the creative industries; enabling storytellers, content creators and editors to focus on their business, whilst trusting me and the team to look after the audit and accounting compliance and supporting their journey.",
 
@@ -568,39 +480,55 @@ let loremIpsum=[
   " As an Audit Partner I take my responsibilities to help improve the standards of our profession seriously, and to ensure that we deliver what we say, when we say we will, with the utmost focus on quality, always."
 ]
 $( document ).ready(function() {
-   let  url=window.location.href;
+  $.ajax({
+        url:"<?php echo base_url(); ?>Welcome/getAllMemberDetails",
+        method:"GET",
+        dataType : 'json',
+        success:function(memberData){
+            // var data=memberData;
+            mainData=memberData;
+            console.log("Data is ",memberData); 
+            let  url=window.location.href;
    let MemberName=url.split('?name=').pop();
 
 
-  let data=Members.filter(data => data.key === MemberName)
-    console.log(data[0]);
-    let profiledata=data[0];
-    $("#name").html(profiledata.Name);
-    $("#email").html(profiledata.emailId);
-    $('#post').html(profiledata.post);
-var image = document.getElementById("member-img");
-var imageParent = document.getElementById("image-parent");
-image.src = profiledata.img; 
-imageParent.appendChild(image);
-let mappedSpecialist;
-let specialist=profiledata.specialist.length == 0 ? ['-'] :profiledata.specialist;
-let mapSpecialist=specialist.map((data,index)=>{
-  return  `<li class="mb-0 remove-width" style='width: 240px;'>${data}</li>`
-})
+      let data=mainData.filter(data => data.key_name === MemberName)
+        console.log(data[0],'jnkjvbdfk');
+        let profiledata=data[0];
+        $("#name").html(profiledata.name);
+        $("#email").html(profiledata.email);
+        $('#post').html(profiledata.designation);
+    var image = document.getElementById("member-img");
+    var imageParent = document.getElementById("image-parent");
+    image.src = baseUrl+profiledata.image; 
+    imageParent.appendChild(image);
+    let mappedSpecialist;
+    let specialist=profiledata.education.length == 0 ? ['-'] :profiledata.education;
+    let mapSpecialist= `<li class="mb-0 remove-width fw-bold" style='width: 240px;list-style: none;font-weight: 500;'>${profiledata.education}</li>`
+    
+    $('#specialist-list').html(mapSpecialist);
+    let aboutMe = profiledata.key_name.length == 0 ? loremIpsum : loremIpsum;
+    let mapAboutMe=aboutMe.map((data,index)=>{
+      return `<p>${data}</p>`
+    });
+    $('#about-me').html(mapAboutMe);
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+            alert('error');
+        }
 
-$('#specialist-list').html(mapSpecialist);
+    })
+ 
 
-let qualification=profiledata.qualification.length == 0 ? ['-'] :profiledata.qualification;
-let mapQualification=qualification.map((data,index)=>{
-  return  `<li class="mb-0 remove-width" style='width: 240px;'>${data}</li>`
-})
 
-$('#qualification-list').html(mapQualification);
-let aboutMe = profiledata.about.length == 0 ? loremIpsum : profiledata.about;
-let mapAboutMe=aboutMe.map((data,index)=>{
-  return `<p>${data}</p>`
-});
-$('#about-me').html(mapAboutMe);
+
+// let qualification=profiledata.vEducation.length == 0 ? ['-'] :profiledata.vEducation;
+// let mapQualification=qualification.map((data,index)=>{
+//   return  `<li class="mb-0 remove-width" style='width: 240px;'>${data}</li>`
+// })
+
+// $('#qualification-list').html(mapQualification);
+
 }
 )
 </script>

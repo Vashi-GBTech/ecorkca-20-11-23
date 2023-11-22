@@ -5,20 +5,14 @@
     <title>Login Form</title>
     <!-- Include Bootstrap CSS, jQuery, and SweetAlert2 CSS and JS files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
-        integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <style>
@@ -33,13 +27,14 @@
     #employeeTable_length select {
         color: black !important;
     }
-    .error {
-            color: red;
-        }
 
-        .error-button-class {
-            background-color: #FE735C !important;
-        }
+    .error {
+        color: red;
+    }
+
+    .error-button-class {
+        background-color: #FE735C !important;
+    }
 </style>
 
 <body>
@@ -129,7 +124,7 @@
     <div id="employeeTableDiv" style='display:none;background:lightgray' class=''>
         <div class='d-flex justify-content-center py-5'>
             <div class='card col-md-10 p-3'>
-                <table id="employeeTable" border="1">
+                <table id="partnersTable" border="1">
                     <thead>
                         <tr>
                             <th>SR No.</th>
@@ -155,7 +150,18 @@
     <button class="btn btn-primary" id="get_img"> Get Img</button>
     <div id="display_img" display="none">
     </div> -->
+
     <script>  var baseUrl = "<?= base_url() ?>";</script>
+
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+        integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         function checkCredentials() {
             var email = document.getElementById("email").value;
@@ -198,7 +204,7 @@
         function saveForm() {
             let formd = document.getElementById('user_form');
             let formData = new FormData(formd);
-            console.log(formData,'formData');
+            console.log(formData, 'formData');
             $.ajax({
                 url: baseUrl + 'Welcome/saveData',
                 method: "POST",
@@ -224,10 +230,10 @@
                         });
                         $('#emp_id').val('');
 
-                        var table = $('#employeeTable').DataTable();
+                        var table = $('#partnersTable').DataTable();
                         table.destroy();
-                        $('#employeeTable tbody').empty();
-                        // $('#employeeTable').empty();
+                        $('#partnersTable tbody').empty();
+                        // $('#partnersTable').empty();
                         getDataTable();
 
                     } else if (data.status === 201) {
@@ -248,58 +254,12 @@
                 }
             });
         }
-        // $('#get_img').on('click', function(){
-        //     $.ajax({
-        //         type : "GET",
-        //         // async : true,
-        //         // crossDomain : true,
-        //         url : baseUrl+"welcome/getImage",
-        //         dataType : "json",
-        //         success : function(result){
-        //             var html = `<img src="${baseUrl}${result}" alt="image">`;
-        //             $('#display_img').css('display', 'block');
-        //             $('#display_img').html(html);
-        //         },
-        //         error: function(e){
-        //             alert("Error");
-        //         }
-        //     })
-        // })
 
     </script>
 
     <script>
         $(document).ready(function () {
-            // Fetch data using AJAX and populate the table
-          
-            $.ajax({
-                url: "<?php echo base_url(); ?>Welcome/getAllMemberDetails",
-                method: 'GET',
-                dataType: 'json',
-                success: function (data) {
-                    console.log(data.result)
-                    console.log(data, 'data');
-                    // Loop through the data and populate the table
-                    for (var i = 0; i < data.length; i++) {
-                        let srno = i + 1;
-                        var row = '<tr>';
-                        row += '<td>' + srno + '</td>';
-                        row += '<td>' + data[i].name + '</td>';
-                        row += '<td>' + data[i].designation + '</td>';
-                        row += '<td>' + data[i].email + '</td>';
-                        row += '<td>' + data[i].education + '</td>';
-                        row += '<td class="d-flex h-100" style="border-bottom:none"><button class="btn btn-outline-warning mx-1" onclick="editEmployee(' + data[i].id + ')"><i class="fas fa-edit"></i></button> <button class="btn btn-danger mx-1"  onclick="deleteEmployee(' + data[i].id + ')"><i class="fas fa-trash-alt"></i></button></td>';
-                        row += '</tr>';
-                        $('#employeeTable tbody').append(row);
-                    }
-                    // Initialize DataTable after data is populated
-                    $('#employeeTable').DataTable();
-                },
-                error: function () {
-                    console.log('Error fetching data.');
-                }
-            });
-            // getDataTable();
+            getDataTable();
         });
 
         function getDataTable() {
@@ -308,28 +268,39 @@
                 method: 'GET',
                 dataType: 'json',
                 success: function (data) {
-                    console.log(data, 'hbdcibsdvihlbsdjvhb');
-                    // Loop through the data and populate the table
+                    console.log(data, 'Received data');
+
+                    // Clear existing table rows before populating new ones
+                    $('#partnersTable tbody').empty();
+
                     for (var i = 0; i < data.length; i++) {
                         let srno = i + 1;
+                        let imageUrl = data[i].image;
+                        let imageSrc = '<?= base_url() ?>' + imageUrl;
+                        let image = "<div class='mx-auto' style='width: 70px; height: 70px; overflow: hidden;'><img src='" + imageSrc + "' class='w-100 rounded-circle change-img-filter' alt=''></div>";
+
                         var row = '<tr>';
                         row += '<td>' + srno + '</td>';
+                        row += '<td>' + image + '</td>';
                         row += '<td>' + data[i].name + '</td>';
                         row += '<td>' + data[i].designation + '</td>';
                         row += '<td>' + data[i].email + '</td>';
                         row += '<td>' + data[i].education + '</td>';
-                        row += '<td class="d-flex h-100" style="border-bottom:none"><button class="btn btn-outline-warning mx-1" ><i class="fas fa-edit"></i></button> <button class="btn btn-danger mx-1" ><i class="fas fa-trash-alt"></i></button></td>';
+                        row += '<td class="d-flex h-100" style="border-bottom:none"><button class="btn btn-outline-warning mx-1" onclick="editEmployee(' + data[i].id + ')"><i class="fas fa-edit"></i></button> <button class="btn btn-danger mx-1"  onclick="deleteEmployee(' + data[i].id + ')"><i class="fas fa-trash-alt"></i></button></td>';
                         row += '</tr>';
-                        $('#employeeTable tbody').append(row);
+
+                        $('#partnersTable tbody').append(row);
                     }
+
                     // Initialize DataTable after data is populated
-                    $('#employeeTable').DataTable();
+                    $('#partnersTable').DataTable();
                 },
                 error: function (err) {
                     console.log(err);
                 }
             });
         }
+
 
         function editEmployee(employeeId) {
             sendId = {
@@ -396,10 +367,10 @@
                                         container: 'my-swal'
                                     }
                                 })
-                                if ($.fn.DataTable.isDataTable('#employeeTable')) {
-                                    $('#employeeTable').DataTable().destroy();
+                                if ($.fn.DataTable.isDataTable('#partnersTable')) {
+                                    $('#partnersTable').DataTable().destroy();
                                 }
-                                $('#employeeTable tbody').empty();
+                                $('#partnersTable tbody').empty();
                                 getDataTable();
                             } else if (data.status === 201) {
                                 Swal.fire({
@@ -417,8 +388,8 @@
                     });
                 }
             });
-    return false;
-}
+            return false;
+        }
 
 
     </script>
