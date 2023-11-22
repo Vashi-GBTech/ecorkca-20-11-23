@@ -23,9 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://ecorkca.ecovisrkca.com';
-$config['base_url'] = 'http://localhost/ecorkca-new';
-// $config['base_url'] = 'https://ecorkca.ecovisrkca.com';
+//$config['base_url'] = 'http://localhost/ecorkca-new';
+ $config['base_url'] = 'https://ecorkca.ecovisrkca.com';
 /*
 |--------------------------------------------------------------------------
 | Index File
